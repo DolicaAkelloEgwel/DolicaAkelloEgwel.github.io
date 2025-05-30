@@ -1,1 +1,0 @@
-# DolicaAkelloEgwel.github.io
