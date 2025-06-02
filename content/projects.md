@@ -1,7 +1,7 @@
 +++
 title = "Projects"
 +++
-# Creative Tech
+# Creative Tech 🖍️
 ## Trafficmancy
 # Scientific Software ⚛️
 Once upon a time I was a "Scientific Software Engineer"...
