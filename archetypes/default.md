@@ -2,6 +2,7 @@
 date = '{{ .Date }}'
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 platforms = []
+link = ''
 +++
 
 ## Platforms
