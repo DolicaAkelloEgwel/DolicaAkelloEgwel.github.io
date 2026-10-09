@@ -1,5 +1,4 @@
 +++
-date = '2026-09-29T15:33:13+01:00'
 title = 'Face Morph'
 platforms = [
     "windows",
