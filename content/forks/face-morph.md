@@ -11,7 +11,7 @@ platforms = [
 
 This code allows you to take a folder of images and use them to generate a face-morphing video.
 
-{{< video src="videos\face-morph.mp4" type="video/mp4" autoplay=true loop=true muted=true >}}
+![](/images/face-morph.gif)
 
 ## Platforms
 
