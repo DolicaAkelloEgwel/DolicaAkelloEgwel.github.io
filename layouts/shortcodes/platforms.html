@@ -1,0 +1,6 @@
+<ul>
+  <li>{{ if in .Page.Params.platforms "windows" }}✅{{ else }}❌{{ end }} Windows</li>
+  <li>{{ if in .Page.Params.platforms "macos" }}✅{{ else }}❌{{ end }} macOS</li>
+  <li>{{ if in .Page.Params.platforms "linux" }}✅{{ else }}❌{{ end }} Linux</li>
+  <li>{{ if in .Page.Params.platforms "raspberry-pi" }}✅{{ else }}❌{{ end }} Raspberry Pi</li>
+</ul>
