@@ -40,8 +40,9 @@ You have the opition of aligning videos before running the face-morphing code.
 
 1. Collect some face images. You will need at least two if you wish to create a video.
 2. Run the following command:
-
-`pixi run python code/utils/align_images.py nonaligned/images/path aligned/images/path --output_size=1024`  
+```
+pixi run python code/utils/align_images.py nonaligned/images/path aligned/images/path --output_size=1024
+```  
 
 ### Generating a Video
 
