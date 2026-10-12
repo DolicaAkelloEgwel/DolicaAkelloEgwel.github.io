@@ -34,7 +34,7 @@ This will have installed all of the dependencies and required Python libraries. 
 
 ## Usage
 
-You have the opition of aligning videos before running the face-morphing code.
+You have the opition of aligning videos before running the face-morphing code. You may want to go through this step if your images anre not 1024x1024 and you don't wish to resize them individually.
 
 ### Aligning Faces
 
