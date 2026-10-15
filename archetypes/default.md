@@ -4,6 +4,8 @@ platforms = []
 link = ''
 +++
 
+## Link
+
 ## Platforms
 
 {{<platforms>}}
@@ -13,3 +15,5 @@ link = ''
 ## Installation
 
 ## Usage
+
+## Further Info
