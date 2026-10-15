@@ -12,6 +12,10 @@ This code allows you to take a folder of images and use them to generate a face-
 
 ![](/images/face-morph.gif)
 
+## Link
+
+https://github.com/DolicaAkelloEgwel/Face-Morphing
+
 ## Platforms
 
 {{<platforms>}}
