@@ -6,9 +6,12 @@ platforms = [
     "linux",
     "raspberry-pi"
 ]
+requirements = [
+    "pixi"
+]
 +++
 
-This code allows you to take a folder of images and use them to generate a face-morphing video.
+Generates a face-morphing video by a folder of face images.
 
 ![](/images/face-morph.gif)
 
@@ -22,12 +25,12 @@ https://github.com/DolicaAkelloEgwel/Face-Morphing
 
 ## Requirements
 
-- pixi
+{{<requirements>}}
 
 ## Installation
 
 1. Install the required software above. The steps to do this will depend on what platform you're using.
-2. Clone the [repository](https://github.com/DolicaAkelloEgwel/Face-Morphing).
+2. Download or clone the [repository](https://github.com/DolicaAkelloEgwel/Face-Morphing).
 3. Open the project folder in your terminal or command line, and then enter the following command:
 
 ```
@@ -38,22 +41,32 @@ This will have installed all of the dependencies and required Python libraries. 
 
 ## Usage
 
-You have the opition of aligning videos before running the face-morphing code. You may want to go through this step if your images anre not 1024x1024 and you don't wish to resize them individually.
+### Demo
+
+The files come with a collection of pre-sligned images that can be used for demoing the code. You can run the code on these demo images with the following command:
+
+```
+pixi run 
+```
 
 ### Aligning Faces
+
+Aligning faces helps ensure that each face is positioned in roughly the same part of each image. It is optional, but aligning helps make sure that the resulting video has smoother transitions. 
 
 1. Collect some face images. You will need at least two if you wish to create a video.
 2. Run the following command:
 ```
-pixi run python code/utils/align_images.py nonaligned/images/path aligned/images/path --output_size=1024
-```  
+pixi run align nonaligned/images/path aligned/images/path
+```
+
+This will create a collection of aligned face images in the `aligned/images/path` that are all 1024x1024. Now you are ready to create a video with them.
 
 ### Generating a Video
 
 1. Choose images for your video generation. You may have decided to align them beforehand, but make sure that they are 1024x1024.
 2. Run the following command.
 ```
-pixi run python code/__init__.py --images input/images/path --output output.mp4
+pixi run morph input/images/path output.mp4
 ```
 
 You should now see a face-morph video called output.mp4 in your project directory. Feel free to run this again with other images, but be sure to either change the name of the output file or backup the output files created from previous runs.
