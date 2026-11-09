@@ -18,7 +18,7 @@ Tracks a coloured object in a video or in the webcam input.
 
 ## Link
 
-https://github.com/DolicaAkelloEgwel/Color-Based-Object-Tracking-With-OpenCV
+{{<source-link>}}
 
 ## Platforms
 

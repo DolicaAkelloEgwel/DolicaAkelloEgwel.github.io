@@ -18,7 +18,7 @@ Generates a face-morphing video by a folder of face images.
 
 ## Link
 
-https://github.com/DolicaAkelloEgwel/Face-Morphing
+{{<source-link>}}
 
 ## Platforms
 
