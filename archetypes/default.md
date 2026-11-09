@@ -1,10 +1,12 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 platforms = []
-link = ''
+source: ''
 +++
 
 ## Link
+
+{{<source-link>}}
 
 ## Platforms
 
@@ -12,7 +14,11 @@ link = ''
 
 ## Requirements
 
+{{<requrements>}}
+
 ## Installation
+
+{{<installation>}}
 
 ## Usage
 
