@@ -65,3 +65,7 @@ pixi run morph YOUR_INPUT_IMAGES_PATH YOUR_OUTPUT_VIDEO_FILENAME.mp4
 ```
 
 You should now see a face-morph video as the specified filename.
+
+## Further Info
+
+Facial Landmarks with OpenCV: https://pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/
