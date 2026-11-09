@@ -9,6 +9,7 @@ platforms = [
 requirements = [
     "pixi"
 ]
+source = 'https://github.com/DolicaAkelloEgwel/Face-Morphing'
 +++
 
 Generates a face-morphing video by a folder of face images.
@@ -29,15 +30,7 @@ https://github.com/DolicaAkelloEgwel/Face-Morphing
 
 ## Installation
 
-1. Install the required software above. The steps to do this will depend on what platform you're using.
-2. Download or clone the [repository](https://github.com/DolicaAkelloEgwel/Face-Morphing).
-3. Open the project folder in your terminal or command line, and then enter the following command:
-
-```
-pixi install
-```
-
-This will have installed all of the dependencies and required Python libraries. You should now be able to run the face-morphing code.
+{{<installation>}}
 
 ## Usage
 

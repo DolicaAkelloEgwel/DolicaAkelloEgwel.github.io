@@ -9,6 +9,7 @@ platforms = [
 requirements = [
     "uv"
 ]
+source = 'https://github.com/DolicaAkelloEgwel/Color-Based-Object-Tracking-With-OpenCV'
 +++
 
 Tracks a coloured object in a video or in the webcam input.
@@ -31,12 +32,7 @@ Be aware that the code will probably run more slowly on a Raspberry Pi. But thin
 
 ## Installation
 
-1. Download or clone the [repository](https://github.com/DolicaAkelloEgwel/Color-Based-Object-Tracking-With-OpenCV).
-2. Open the project folder in your terminal or command line, and then enter the following command:
-
-```
-uv sync
-```
+{{<installation>}}
 
 ## Usage
 
@@ -107,5 +103,5 @@ Chooses a predefined colour to track. Giving an argument for this causes the con
 ## Further Info
 
 Ball Tracking with OpenCV: https://pyimagesearch.com/2015/09/14/ball-tracking-with-opencv/  
-Code from which this project was forked: https://github.com/Practical-CV/Color-Based-Ball-Tracking-With-OpenCV
+Original code from which this project was forked: https://github.com/Practical-CV/Color-Based-Ball-Tracking-With-OpenCV
 

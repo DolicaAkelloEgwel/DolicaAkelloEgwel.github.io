@@ -1,0 +1,19 @@
+<ol>
+    <li>Make sure the required software has been installed. The steps to do this will vary depending on your operating system.</li>
+    <li>Download or clone the code <a href="{{ .Page.Params.source }}">repository</a>.</li>
+    <li>Open the project folder in your terminal or command line, and then enter the following command:</li>
+</ol>
+{{ if in .Page.Params.requirements "pixi" }}
+<pre>
+<code>
+pixi install
+</code>
+</pre>
+{{ end }}
+{{ if in .Page.Params.requirements "uv" }}
+<pre>
+<code>
+uv sync
+</code>
+</pre>
+{{ end }}
