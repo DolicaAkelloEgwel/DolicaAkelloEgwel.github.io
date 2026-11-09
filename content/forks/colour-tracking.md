@@ -12,7 +12,7 @@ requirements = [
 source = 'https://github.com/DolicaAkelloEgwel/Color-Based-Object-Tracking-With-OpenCV'
 +++
 
-Tracks a coloured object in a video or in the webcam input.
+Tracks a single coloured object in a video or in the webcam input.
 
 ![](/images/ball-tracking.gif)
 
