@@ -1,7 +1,7 @@
 +++
 title = 'Gender Detection'
 platforms = []
-source: 'https://github.com/DolicaAkelloEgwel/gender-detection-keras'
+source = 'https://github.com/DolicaAkelloEgwel/gender-detection-keras'
 +++
 
 ## Link
@@ -14,7 +14,7 @@ source: 'https://github.com/DolicaAkelloEgwel/gender-detection-keras'
 
 ## Requirements
 
-{{<requrements>}}
+{{<requirements>}}
 
 ## Installation
 
