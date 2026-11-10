@@ -103,7 +103,7 @@ Chooses a predefined colour to track. Giving an argument for this causes the con
 
 ## Parent Project
 
-{{<<parent-link>>}}
+{{<parent-link>}}
 
 ## Further Info
 
