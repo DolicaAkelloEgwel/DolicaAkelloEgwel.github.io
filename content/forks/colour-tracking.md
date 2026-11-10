@@ -10,6 +10,7 @@ requirements = [
     "uv"
 ]
 source = 'https://github.com/DolicaAkelloEgwel/Color-Based-Object-Tracking-With-OpenCV'
+parent = 'https://github.com/Practical-CV/Color-Based-Ball-Tracking-With-OpenCV'
 +++
 
 Tracks a single coloured object in a video or in the webcam input.
@@ -100,8 +101,10 @@ Chooses a predefined colour to track. Giving an argument for this causes the con
 1. It can't track multiple objects
 2. No other object of the same colour should be there, otherwise we won't be able to track successfully.
 
+## Parent Project
+
+{{<<parent-link>>}}
+
 ## Further Info
 
 Ball Tracking with OpenCV: https://pyimagesearch.com/2015/09/14/ball-tracking-with-opencv/  
-Original code from which this project was forked: https://github.com/Practical-CV/Color-Based-Ball-Tracking-With-OpenCV
-

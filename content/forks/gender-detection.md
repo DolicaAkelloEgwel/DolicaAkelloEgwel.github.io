@@ -2,6 +2,7 @@
 title = 'Gender Detection'
 platforms = []
 source = 'https://github.com/DolicaAkelloEgwel/gender-detection-keras'
+parent = 'https://github.com/arunponnusamy/gender-detection-keras'
 +++
 
 ## Link
@@ -21,5 +22,9 @@ source = 'https://github.com/DolicaAkelloEgwel/gender-detection-keras'
 {{<installation>}}
 
 ## Usage
+
+## Parent Project
+
+{{<parent-link>}}
 
 ## Further Info

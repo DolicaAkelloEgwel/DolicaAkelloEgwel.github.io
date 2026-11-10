@@ -10,6 +10,7 @@ requirements = [
     "pixi"
 ]
 source = 'https://github.com/DolicaAkelloEgwel/Face-Morphing'
+parent = 'https://github.com/Azmarie/Face-Morphing'
 +++
 
 Generates a face-morphing video by a folder of face images.
@@ -65,6 +66,10 @@ pixi run morph YOUR_INPUT_IMAGES_PATH YOUR_OUTPUT_VIDEO_FILENAME.mp4
 ```
 
 You should now see a face-morph video as the specified filename.
+
+## Parent Project
+
+{{<parent-link>}}
 
 ## Further Info
 
