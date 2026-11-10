@@ -1,6 +1,6 @@
 +++
 title = 'Gender Detection'
-platforms = []
+platforms = ["windows", "linux"]
 source = 'https://github.com/DolicaAkelloEgwel/gender-detection-keras'
 parent = 'https://github.com/arunponnusamy/gender-detection-keras'
 +++
