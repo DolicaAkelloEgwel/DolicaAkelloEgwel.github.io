@@ -47,7 +47,7 @@ This will create a video in the same directory called output.mp4.
 
 ### (Optional) Aligning Faces
 
-Aligning faces helps ensure that each face is positioned in roughly the same part of each image. It is optional, but aligning helps make sure that the resulting video has smoother transitions. 
+Aligning faces helps ensure that each face is positioned in roughly the same part of each image. It is optional, but aligning helps make sure that the resulting video has smoother transitions. Alignment also makes sure that the resulting images are 1024x1024.
 
 1. Collect some face images. You will need at least two if you wish to create a video.
 2. Run the following command:
