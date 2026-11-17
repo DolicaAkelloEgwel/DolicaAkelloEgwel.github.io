@@ -1,9 +1,14 @@
 +++
 title = 'Gender Detection'
-platforms = ["windows", "linux"]
+platforms = ["windows"]
 source = 'https://github.com/DolicaAkelloEgwel/gender-detection-keras'
 parent = 'https://github.com/arunponnusamy/gender-detection-keras'
+requirements = [
+    "pixi"
+]
 +++
+
+Detects the gender of the faces present in a single image or webcam input.
 
 ## Link
 
@@ -22,6 +27,8 @@ parent = 'https://github.com/arunponnusamy/gender-detection-keras'
 {{<installation>}}
 
 ## Usage
+
+
 
 ## Parent Project
 
