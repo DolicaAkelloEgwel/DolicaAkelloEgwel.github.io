@@ -24,6 +24,8 @@ Detects the gender of the faces present in a single image or webcam input.
 
 {{<requirements>}}
 
+Note that if you wish to train your own detection model, you will need a Nvidia Lovelace GPU. This is because the code has been built for an older version of Tensorflow.
+
 ## Installation
 
 {{<installation>}}
@@ -47,6 +49,8 @@ pixi run detect-gender --webcam
 ```
 
 ### Training a Custom Model
+
+TODO :)
 
 ### Using a Custom Model
 
