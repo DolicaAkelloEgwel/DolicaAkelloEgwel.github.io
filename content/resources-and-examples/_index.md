@@ -1,7 +1,7 @@
 +++
 title = "Resources and Examples"
 type = "chapter"
-weight = 1
+weight = 3
 +++
 
 This is a new chapter.
