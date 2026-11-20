@@ -4,7 +4,8 @@ platforms = ["windows"]
 source = 'https://github.com/DolicaAkelloEgwel/gender-detection-keras'
 parent = 'https://github.com/arunponnusamy/gender-detection-keras'
 requirements = [
-    "pixi"
+    "pixi",
+    "cuda-non-blackwell",
 ]
 +++
 

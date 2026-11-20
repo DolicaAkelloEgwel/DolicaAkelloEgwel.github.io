@@ -1,4 +1,6 @@
 <ul>
+{{ if in .Page.Params.requirements "cuda-non-blackwell" }}<li>A CUDA-capable GPU that does not have the Blackwell architecture.</li>{{ end }}
+{{ if in .Page.Params.requirements "cuda-any" }}<li>A CUDA-capable GPU.</li>{{ end }}
 {{ if in .Page.Params.requirements "pixi" }}<li>pixi</li>{{ end }}
 {{ if in .Page.Params.requirements "uv" }}<li>uv</li>{{ end }}
 </ul>

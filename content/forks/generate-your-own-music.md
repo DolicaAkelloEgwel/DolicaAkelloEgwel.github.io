@@ -1,7 +1,7 @@
 +++
 title = 'Generate Your Own Music'
 platforms = ["windows", "linux"]
-requirements = ["pixi", "cuda-lovelace"]
+requirements = ["pixi", "cuda-non-blackwell"]
 source = 'https://github.com/DolicaAkelloEgwel/Generate_Your_Own_Music'
 parent = 'https://github.com/masanbasa3k/Generate_Your_Own_Music'
 +++
