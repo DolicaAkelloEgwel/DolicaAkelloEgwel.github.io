@@ -174,6 +174,41 @@ pixi add python
 
 #### Adding and Removing Libraries
 
+pixi is able to add non-Python depedencies to our projects. One reason this can be useful is when creating projects that create or manipulate videos, as they are often using [ffmpeg](https://ffmpeg.org/) in the background.
+
+In your project directory, create the following main.py file:
+
+```py {title="main.py"}
+import ffmpeg
+
+stream = ffmpeg.input("mandelbrot=size=500x500:rate=15", f="lavfi")
+stream = ffmpeg.output(stream, 'output.gif', t=5)
+ffmpeg.run(stream)
+```
+
+This uses ffmpeg to create a 5-second mandelbrot gif. So far, only Python has been added as a project requirement meaning that the code will not work. Test this out with the following command:
+
+```bash
+pixi run python main.py
+```
+
+Now in the terminal we see the following:
+```bash
+ModuleNotFoundError: No module named 'ffmpeg'
+```
+
+To fix this, we inform pixi that the `ffmpeg-python` library is needed for the project. We add it to our project requirements with the following command:
+
+```bash
+pixi add ffmpeg-python
+```
+
+Now we may run the code again and it successfully generates a gif file:
+
+![](/images/mandelbrot.gif)
+
+Although ffmpeg-python is simply a Python library that sends instructions to ffmpeg, the pixi package knows to also install ffmpeg in order for the library to work. This is what can make pixi an appealing choice when trying to ensure that a Python projecct that has non-Python dependencies can be reproduced across different machines.
+
 ## VS Code Extensions
 
 ### Python
