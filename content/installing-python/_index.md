@@ -22,7 +22,9 @@ If you're using Python for AI/ML projects, or for tasks such as video generation
 
 For many other Python projects, uv will be more than sufficient. You may also start with uv and switch to pixi later if your project's requirements become more complex. This website includes examples configured with both uv and pixi, so if you'd like to explore all of the projects featured here, it's worth installing both.
 
-## Installing uv
+## uv
+
+### Installing uv
 
 {{< tabs >}}
 {{% tab title="macOS / Linux" %}}
@@ -48,7 +50,70 @@ Now open a new terminal, and check that the install was successful by entering t
 uv --version
 ```
 
-## Installing pixi
+### Basic Usage
+
+#### Creating a New uv Project
+
+To create a new Python project with uv, enter the following command in your terminal:
+
+```bash
+uv init --no-package YOUR-PROJECT-NAME
+```
+
+This will then create a folder with the following structure:
+```
+YOUR-PROJECT-NAME/
+├── .gitignore
+├── .python-version
+├── main.py
+├── pyproject.toml
+└── README.md
+```
+
+Enter the project folder in the terminal. This can be done with the command `cd YOUR-PROJECT-NAME`.
+
+From there, you can run the file with the following command:
+
+```bash
+uv run main.py
+```
+
+#### Adding and Removing Libraries
+
+As an example, let's add the [emoji](https://github.com/carpedm20/emoji/) library to the project.
+
+Now **replace** the contents of your main.py file with the following:
+
+```py {title="main.py"}
+import emoji
+
+print(emoji.emojize("Down the :rabbit: :hole:"))
+```
+
+Now run the code with the `uv run main.py` command. You will see the following in the terminal output:
+```bash
+ModuleNotFoundError: No module named 'emoji'
+```
+
+This is because we haven't yet told uv that the emoji library is a dependency for our project. But now we can do this with the following command:
+```bash
+uv add emoji
+```
+
+Now start the file again, and the code runs.
+
+```bash
+Down the 🐇 🕳️
+```
+
+If we realise that our project no longer needs a particular library then we can get rid of it with the remove command. Here is how we can remove the emoji library:
+```
+uv remove emoji
+```
+
+## pixi
+
+### Installing pixi
 
 {{< tabs >}}
 {{% tab title="macOS / Linux" %}}
@@ -73,6 +138,12 @@ Now open a new terminal, and check that the install was successful by entering t
 ```bash
 pixi --version
 ```
+
+### Basic Usage
+
+#### Creating a New pixi Project
+
+#### Adding and Removing Libraries
 
 ## VS Code Extensions
 
