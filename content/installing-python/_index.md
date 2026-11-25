@@ -69,6 +69,7 @@ This will then create a folder with the following structure:
   - main.py | fa-fw fab fa-python
   - pyproject.toml | file
   - README.md | fa-fw fab fa-markdown
+```
 
 Enter the project folder in the terminal. This can be done with the command `cd YOUR-PROJECT-NAME`.
 
@@ -145,6 +146,31 @@ pixi --version
 ### Basic Usage
 
 #### Creating a New pixi Project
+
+To create a new Python project with pixi, enter the following into your terminal:
+
+```bash
+pixi init YOUR-PROJECT-NAME
+```
+
+This will then create a folder with the following structure:
+
+```tree
+- YOUR-PROJECT-NAME | folder
+  - .gitattributes | file
+  - .gitignore | file
+  - pixi.toml | file
+```
+
+Enter the project folder in the terminal. This can be done with the command `cd YOUR-PROJECT-NAME`.
+
+Unlike uv, pixi will not create a main.py for you when you use its `init` command. This is because pixi is intended to manage projects that are not restricted to Python.
+
+To add Python as a project requirement we use the following command:
+
+```bash
+pixi add python
+```
 
 #### Adding and Removing Libraries
 
