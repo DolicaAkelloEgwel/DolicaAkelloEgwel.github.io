@@ -73,4 +73,4 @@ You should now see a face-morph video as the specified filename.
 
 ## Further Info
 
-Facial Landmarks with OpenCV: https://pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/
+[Facial Landmarks with OpenCV](https://pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/) - Computer vision overview of detecting facial landmarks with OpenCV.
