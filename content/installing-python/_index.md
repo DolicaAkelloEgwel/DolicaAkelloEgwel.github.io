@@ -29,24 +29,24 @@ For many other Python projects, uv will be more than sufficient. You may also st
 {{< tabs >}}
 {{% tab title="macOS / Linux" %}}
 Enter the following in the terminal to install with `curl`:
-```bash
+```
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 Enter the following into the terminal to install with `wget`:
-```bash
+```
 wget -qO- https://astral.sh/uv/install.sh | sh
 ```
 {{% /tab %}}
 {{% tab title="Windows" %}}
 uv may be installed in the terminal with [Scoop](https://scoop.sh/):
-```pwsh
+```
 scoop install main/uv
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
 Now open a new terminal, and check that the install was successful by entering the following command:
-```bash
+```
 uv --version
 ```
 
@@ -56,7 +56,7 @@ uv --version
 
 To create a new Python project with uv, enter the following command in your terminal:
 
-```bash
+```
 uv init --no-package YOUR-PROJECT-NAME
 ```
 
@@ -75,7 +75,7 @@ Enter the project folder in the terminal. This can be done with the command `cd 
 
 From there, you can run the file with the following command:
 
-```bash
+```
 uv run main.py
 ```
 
@@ -93,25 +93,25 @@ print(emoji.emojize("Down the :rabbit: :hole:"))
 
 Now run the code with the `uv run main.py` command. You will see the following in the terminal output:
 
-```bash
+```
 ModuleNotFoundError: No module named 'emoji'
 ```
 
 This is because we haven't yet told uv that the emoji library is a dependency for our project. But now we can do this with the following command:
 
-```bash
+```
 uv add emoji
 ```
 
 Now start the file again, and the code runs.
 
-```bash
+```
 Down the 🐇 🕳️
 ```
 
 If we realise that our project no longer needs a particular library then we can get rid of it with the remove command. Here is how we can remove the emoji library:
 
-```bash
+```
 uv remove emoji
 ```
 
@@ -122,24 +122,24 @@ uv remove emoji
 {{< tabs >}}
 {{% tab title="macOS / Linux" %}}
 Enter the following in the terminal to install with `curl`:
-```bash
+```
 curl -fsSL https://pixi.sh/install.sh | sh
 ```
 Enter the following into the terminal to install with `wget`:
-```bash
+```
 curl -fsSL https://pixi.sh/install.sh | sh
 ```
 {{% /tab %}}
 {{% tab title="Windows" %}}
 pixi may be installed in the terminal with [Scoop](https://scoop.sh/):
-```pwsh
+```
 scoop install main/pixi
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
 Now open a new terminal, and check that the install was successful by entering the following command:
-```bash
+```
 pixi --version
 ```
 
@@ -149,7 +149,7 @@ pixi --version
 
 To create a new Python project with pixi, enter the following into your terminal:
 
-```bash
+```
 pixi init YOUR-PROJECT-NAME
 ```
 
@@ -168,7 +168,7 @@ Unlike uv, pixi will not create a main.py for you when you use its `init` comman
 
 To add Python as a project requirement we use the following command:
 
-```bash
+```
 pixi add python
 ```
 
@@ -188,18 +188,18 @@ ffmpeg.run(stream)
 
 This uses ffmpeg to create a 5-second mandelbrot gif. So far, only Python has been added as a project requirement meaning that the code will not work. Test this out with the following command:
 
-```bash
+```
 pixi run python main.py
 ```
 
 Now in the terminal we see the following:
-```bash
+```
 ModuleNotFoundError: No module named 'ffmpeg'
 ```
 
 To fix this, we inform pixi that the `ffmpeg-python` library is needed for the project. We add it to our project requirements with the following command:
 
-```bash
+```
 pixi add ffmpeg-python
 ```
 
@@ -214,14 +214,14 @@ Although ffmpeg-python is simply a Python library that sends instructions to ffm
 ### Python
 
 If you use Visual Studio Code it helps to have the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) installed. One way of installing this is through the terminal with the following command:
-```bash
+```
 code --install-extension ms-python.python
 ```
 
 ### Pixi
 
 You may also find the [Pixi extension](https://marketplace.visualstudio.com/items?itemName=renan-r-santos.pixi-code) useful. This can also be installed with the terminal:
-```bash
+```
 code --install-extension renan-r-santos.pixi-code
 code --enable-proposed-api renan-r-santos.pixi-code
 ``` 
