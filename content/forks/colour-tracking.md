@@ -136,6 +136,28 @@ Each `ColouredObject` represents one coloured region of the image and contains t
 
 #### `get_largest_coloured_object(image, hsv_lower, hsv_upper)`
 
+Finds the *largest* object in `image` that falls within the specified HSV colour range.
+
+##### Parameters
+
+| Parameter | Type                   | Description                                 |
+|-----------|------------------------|---------------------------------------------|
+| image     | `np.ndarray`           | The image to check for coloured object.    |
+| lower_hsv | `tuple[int, int, int]` | The lower bound of the HSV range to detect. |
+| upper_hsv | `tuple[int, int, int]` | The upper bound of the HSV range to detect. |
+
+##### Returns
+
+Returns a single `ColouredObject`. If no objects within the specified colour range are found, then the function returns None.
+
+The `ColouredObject` represents one coloured region of the image and contains the following attributes.
+
+| Attribute | Type    | Description                                           |
+|-----------|---------|-------------------------------------------------------|
+| x         | `int`   | Horizontal position of the object's centre.           |
+| y         | `int`   | Vertical position of the object's centre.             |
+| radius    | `float` | Radius of the minimum enclosing circle of the object. |
+
 ## Limitations
 
 1. It can't track multiple objects
