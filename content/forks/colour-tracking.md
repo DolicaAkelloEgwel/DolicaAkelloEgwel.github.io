@@ -101,7 +101,7 @@ Chooses a predefined colour to track. Giving an argument for this causes the con
 ### Using Colour Tracking in Your Own Python Project
 
 Install the package into your own project with the following command:
-```bash
+```
 uv add git+https://github.com/DolicaAkelloEgwel/Color-Based-Object-Tracking-With-OpenCV.git
 ```
 
@@ -142,7 +142,7 @@ Finds the *largest* object in `image` that falls within the specified HSV colour
 
 | Parameter | Type                   | Description                                 |
 |-----------|------------------------|---------------------------------------------|
-| image     | `np.ndarray`           | The image to check for coloured object.    |
+| image     | `np.ndarray`           | The image to check for coloured object.     |
 | lower_hsv | `tuple[int, int, int]` | The lower bound of the HSV range to detect. |
 | upper_hsv | `tuple[int, int, int]` | The upper bound of the HSV range to detect. |
 
